@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+ <name>J2Mantis</name>
+ <!-- The following elements are optional and free of formatting constraints -->
+ <creationDate>2009-05-26</creationDate>
+ <author>Markus Schneider - Compserve24 GbR</author>
+ <authorEmail>markus.schneider@compserve24.de</authorEmail>
+ <authorUrl>http://www.compserve24.de</authorUrl>
+ <copyright>Copyright Info</copyright>
+ <license>GNU GPL</license>
+ <!--  The version string is recorded in the components table -->
+ <version>0.3</version>
+ <!-- The description is optional and defaults to the name -->
+ <description>view and add Mantis Bugs, add file and notice. Support multi projects and subprojects</description>
+ 
+ <!-- Site Main File Copy Section -->
+ <!-- Note the folder attribute: This attribute describes the folder
+      to copy FROM in the package to install therefore files copied
+      in this section are copied from /site/ in the package -->
+ <files folder="site">
+  <filename>JoomlaMantisController.class.php</filename>
+  <filename>JoomlaMantisParameter.class.php</filename>
+  <filename>MantisConnector.class.php</filename>
+  <filename>j2mantis.php</filename>
+  <filename>index.html</filename>
+  <filename>views/index.html</filename>
+  <filename>views/j2mantis/index.html</filename>
+  <filename>views/j2mantis/view.html.php</filename>
+  <filename>views/j2mantis/tmpl/default.php</filename>
+  <filename>views/j2mantis/tmpl/index.html</filename>
+  <filename>views/showbug/index.html</filename>
+  <filename>views/showbug/view.html.php</filename>
+  <filename>views/showbug/tmpl/default.php</filename>
+  <filename>views/showbug/tmpl/index.html</filename>
+  <filename>views/addbug/index.html</filename>
+  <filename>views/addbug/view.html.php</filename>
+  <filename>views/addbug/tmpl/default.php</filename>
+  <filename>views/addbug/tmpl/index.html</filename>
+  <filename>soa_objects/bug_attachment.php</filename>
+  <filename>soa_objects/bug_data.php</filename>
+  <filename>soa_objects/note.php</filename>
+  <filename>soa_objects/project_data.php</filename>
+  <filename>assets/j2mantis.css</filename>
+  <folder>language</folder>
+ </files>
+ 
+ <params>
+ 	<param name="font_size" default="16" />
+ 	
+ </params>
+ 
+ 
+ <administration>
+  <!-- Administration Menu Section -->
+  <menu>J2Mantis!</menu>
+ 
+  <!-- Administration Main File Copy Section -->
+  <files folder="admin">
+   <filename>index.html</filename>
+   <filename>config.xml</filename>
+   <filename>j2mantis.php</filename>
+   <filename>J2Mantis.xml</filename>
+  </files>
+ 
+ </administration>
+</install>

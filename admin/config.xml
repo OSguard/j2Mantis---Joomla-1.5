@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+ <params>
+ 
+	 <param type="text" name="url" size="30" label="Webservice url:" description="Please enter the required url" />
+	 <param type="text" name="username" size="30" label="Username:" description="Please enter the required username" />
+	 <param type="password" name="password" size="30" label="Password:" description="Please enter the required password" />
+	 <param type="text" name="projekt" size="3" label="Projekt ID:" description="Please enter a id of a projekt" />	
+ 	 <param type="text" name="email" size="30" default="" label="Backup Email:" description="Enter a email where to send if webservice not works" />
+ 	 <param name="captcha" type="radio" default="1" label="use captcha" description="The plugin must be install">
+  		<option value="0">dont use</option>
+  		<option value="1">use</option>
+	 </param>
+ 	<param type="password" name="key" size="30" label="Secret Key:" description="Please enter the required secret key for id" />
+	  <param name="overview" type="radio" default="1" label="overview:" description="You can deactivate list of bugs">
+  		<option value="0">not active</option>
+  		<option value="1">active</option>
+	 </param>
+ </params>
+ 
+</config>
